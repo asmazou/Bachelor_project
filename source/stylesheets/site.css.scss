@@ -1,9 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 header {
+  background-color: lightgray;
   color: black;
-  padding: 8px;
+  padding: 15px;
   margin: 0;
   justify-content: space-between;
   display: flex;
+  box-shadow: 0px 5px lightgray;
 }
 
 .logo {
@@ -37,7 +44,7 @@ nav ul li a {
   color: black;
   font-size: 20px;
   text-decoration: none;
-
+  padding-right: 30px;
 }
 
 body {
@@ -47,13 +54,15 @@ body {
 
 }
 
+
 .footer {
+  background-color: lightgray;
   position: fixed;
+  padding: 15px;
+  display: flex;
   bottom: 0;
   width: 100%;
-  justify-content: space-between;
 }
-
 
 footer ul {
   list-style-type: none;
