@@ -5,12 +5,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+     <!-- Use the title from a pages frontmatter if it has one -->
+    <title><%= current_page.data.title || "Bachelor" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+  <header>
+   <div class="logo">
+        <a href="index.html">Logo</a>
+    </div>
+
+  <nav>
+   <ul>
+         <li><a href="guides.html">Guides</a> </li>
+         <li><a href="autochecks.html">Auto checks</a> </li>
+       </ul>
+  </nav>
+  </header>
     <%= yield %>
+
+  <footer>
+      <div class="footer">
+          <ul>
+              <li><a href="About.html">About</a> </li>
+              <li><a href="Links.html">More in dept explanation of WCAG </a> </li>
+          </ul>
+      </div>
+  </footer>
+
   </body>
 </html>
+
+
