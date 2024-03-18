@@ -64,22 +64,21 @@ body {
   width: 100%;
 }
 
-footer ul {
+.wcag{
+  padding-right: 35px;
+}
+
+.wcag li{
   list-style-type: none;
 }
 
-footer ul li {
-  display: inline;
-  margin: 15px;
-}
-
-
-footer ul li a {
-  text-align: left;
-  color: black;
+.wcag li a{
   text-decoration: none;
-
 }
+
+
+
+
 
 a {
   color: rgba(#000, 0.7);

@@ -27,10 +27,18 @@
 
   <footer>
       <div class="footer">
-          <ul>
-              <li><a href="about.html">About</a> </li>
-              <li><a href="links.html">More in dept explanation of WCAG </a> </li>
-          </ul>
+          <div class="wcag"
+             <h4>More in dept explanation of WCAG </h4>
+             <li> <%= link_to 'How to meet WCAG (English)', 'https://www.w3.org/WAI/standards-guidelines/wcag/' %>
+             <br>
+             <li> <%= link_to 'UUtilsynet.no (Norwegian)', 'https://www.uutilsynet.no/' %>
+          </div>
+
+          <div class="about">
+             <h4>About </h4>
+             <p>The site was made as a bachelor project between 4 Oslomet students and the company tight.</p>
+             <p>Neither Oslomet or Tight are responsible for the content within this site. </p>
+          </div>
       </div>
   </footer>
 
