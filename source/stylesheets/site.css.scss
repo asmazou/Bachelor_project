@@ -50,7 +50,7 @@ nav ul li a {
 body {
   background-color: #ffffff;
   color: #333;
-  font-family: Roboto;
+  font-family: Roboto, verdana, sans-serif;
 
 }
 
@@ -59,6 +59,7 @@ body {
   background-color: lightgray;
   position: relative;
   padding: 15px;
+
   display: flex;
   bottom: 0;
   width: 100%;

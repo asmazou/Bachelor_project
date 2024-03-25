@@ -1,5 +1,7 @@
+ <%= stylesheet_link_tag "overview_guides" %>
+ <%= javascript_include_tag "site" %>
 
-<div class="Header">
+<div class="header">
     <h1> Manual Accessibility Checkers </h1>
     <br>
         <p> To achieve universal use of your website here are some important things to make sure of.
@@ -8,6 +10,73 @@
         </p>
 </div>
 
-<div class "principleContainers">
-    <div class="container"
+
+<div class= "wcag_guides">
+    <div class= "guides_header">
+        <h2 class= "guides_title" id= "section title"> WCAG Principles </h2>
+        <p> Checklist, tests and code examples for the Web Content Accessibility Guidelines (WCAG) principles.
+    </div>
+    <div class= "container">
+        <a class= "content_link" href= guides/percivable.html.erb>
+            <div class="content_container" lable="Button to take you to Wcag Guide 1.Percivable">
+                <p class= "content_text">1.Percivable</p>
+            </div>
+        </a>
+
+        <a class= "content_link" href="guides/operable.html.erb" >
+            <div class="content_container">
+                <p> 2.Operable </p>
+            </div>
+        </a>
+
+        <a class= "content_link" href="guides/understandable.html.erb">
+            <div class="content_container">
+                <p> 3.Understandable </p>
+            </div>
+        </a>
+        <a class = "content_link" href="guides/robust.html.erb">
+            <div class="content_container">
+                <p> 4.Robust </p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class "component_guides">
+    <div class= "guides_header">
+        <h3 class= "guides_title"> Components </h2>
+        <p> Checklists, tests and code examples for a selection of common components. </p>
+    </div>
+
+    <div class="container">
+        <a class= "content_link" href= "/guides/button.html.erb">
+            <div class="content_container">
+                <p> Button </p>
+            </div>
+        </a>
+
+        <a class= "content_link" href= "/guides/footer.html.erb">
+            <div class="content_container">
+                <p> Footer </p>
+            </div>
+        </a>
+
+        <a class= "content_link" href= "/guides/header.html.erb">
+            <div class="content_container">
+                <p> Header </p>
+            </div>
+        </a>
+
+        <a class= "content_link" href= "/guides/list.html.erb">
+            <div class="content_container">
+                <p> Lists </p>
+            </div>
+        </a>
+
+        <a class= "content_link" href= "/guides/table.html.erb">
+            <div class="content_container">
+                <p> Table </p>
+            </div>
+        </a>
+    </div>
 </div>
