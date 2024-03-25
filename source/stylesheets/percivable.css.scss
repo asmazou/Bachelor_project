@@ -1,4 +1,7 @@
-
+*{
+ margin: 0;
+  padding: 0;
+}
 .headerPer{
   background-color: #e8e8e8;
   width: 100%;
@@ -15,6 +18,100 @@ h1{
   line-height: 1.4;
 }
 
+.container-left{
+  position: relative;
+  width: 30em;
+  margin-top: 5rem;
+  margin-left: 50px;
+}
+
+.btn{
+ /* background-color: gray;*/
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  padding: 0 16px ;
+  cursor: pointer;
+}
+
+.btn .text-btn{
+  font-size: 19px;
+  color: #000000;
+}
+.btn .arrow-down{
+  display: flex;
+  font-size: 19px;
+  height: 20px;
+  width: 20px;
+  color: #000000;
+  transition: 0.4s;
+}
+
+.btn.open .arrow-down{
+  transform: rotate(-180deg);
+}
+
+.checklist{
+  position: relative;
+  margin-top: 15px;
+  padding: 15px;
+  display: none;
+}
+
+.btn.open~ .checklist{
+  display: block;
+}
+
+.checklist .element{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 55px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.checklist .element:hover{
+  background-color: #e8e8e8;
+}
+
+.element .element-text{
+  font-size: 17px;
+}
+
+.element .checkbox{
+  display: flex;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.element.checked .checkbox{
+  background-color: black;
+  border-color: #000000;
+}
+
+.checkbox .check-icon{
+  color: white;
+  font-size: 10px;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.element.checked .check-icon{
+  color: white;
+  transform: scale(1);
+}
+
+/*
 .infobox{
   display: flex;
   background-color: gray;
@@ -28,7 +125,7 @@ h1{
   padding-top: 30px;
   padding-left: 50px;
 }
-
+*/
 
 
 
