@@ -1,14 +1,18 @@
 .site_title{
   box-sizing: border-box;
-  padding: 15px;
-  margin: 15px;
+  padding: 30px;
+  align-items: center;
 }
 
 
-.wcag_guides{}
+.wcag_guides{
+  box-sizing: border-box;
+  padding: 30px;
+}
 
 .component_guides{
-
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .guides_header{}
