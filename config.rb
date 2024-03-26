@@ -46,4 +46,4 @@ page '/*.txt', layout: false
 # end
 
 activate :directory_indexes
-activate :breadcrumbs
+activate :breadcrumbs, wrapper: :li
