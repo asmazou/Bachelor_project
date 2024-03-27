@@ -1,21 +1,27 @@
+*, {
+box-sizing: border-box;
+}
+
 .site_title{
-  box-sizing: border-box;
   padding: 30px;
   align-items: center;
 }
 
+.guides{
+  margin: auto;
+}
 
 .wcag_guides{
-  box-sizing: border-box;
   padding: 30px;
 }
 
 .component_guides{
-  box-sizing: border-box;
   padding: 30px;
 }
 
-.guides_header{}
+.guides_header{
+  padding: 15px;
+}
 
 .guides_title{
   font-size: 25px;
@@ -25,25 +31,21 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  box-shadow: #333333;
   //padding:0px;
-
 }
-
-.content_link{
-
+.content_link :hover{
+  border: 1px solid #000;
 }
 
 .content_container{
   background-color: #e8e8e8;
-  border: 1px solid #000;
   border-radius: 15px;
   height: 10rem;
   width: 15rem;
   margin: 20px 30px;
   text-align: center;
 }
-
-.content_text{
-
+.content_container :hover{
+  border: transparent;
 }
