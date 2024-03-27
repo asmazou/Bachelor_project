@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.btn .text-btn{
+.btn .text-btn1{
   font-size: 19px;
   color: #000000;
 }
@@ -101,6 +101,18 @@
   transform: scale(1);
 }
 
+.infobox{
+  position: absolute;
+  bottom: 80px;
+  top: 10rem;
+  right: 0;
+  z-index: 999;
+  width: 50rem;
+  height: 55rem;
+  background-color: gray;
+}
+
+
 /*
 .infobox{
   display: flex;
@@ -114,8 +126,7 @@
   font-size: 25px;
   padding-top: 30px;
   padding-left: 50px;
-}
-*/
+}*/
 
 
 
