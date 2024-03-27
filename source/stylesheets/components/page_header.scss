@@ -1,0 +1,14 @@
+.page-header {
+  background-color: #e8e8e8;
+  padding: 30px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,37 +1,28 @@
+const checklistContainers = document.querySelectorAll(".checklist-container");
 
-const button = document.querySelector(".btn"),
-    elements = document.querySelectorAll(".element");
+checklistContainers.forEach((checklistContainer) => {
+  const button = checklistContainer.querySelector(".btn");
+  const elements = checklistContainer.querySelectorAll(".element");
+  const title = button.innerText;
 
-button.addEventListener("click", ()=> {
-    button.classList.toggle("open");
-});
+  button.addEventListener("click", ()=> {
+      button.classList.toggle("open");
+  });
 
-    elements.forEach(element => {
-        element.addEventListener("click", () => {
-            element.classList.toggle("checked");
+  elements.forEach((element) => {
+    element.addEventListener('click', () => {
+      element.classList.toggle("checked");
 
-            let checked = document.querySelectorAll(".checked");
-            let buttonText = document.querySelector(".text-btn");
+      const checked = checklistContainer.querySelectorAll(".element.checked").length;
+      const total = elements.length;
+      const buttonText = button.querySelector(".text-btn");
 
-            if (checked && checked.length > 0) {
-                buttonText.innerText = '1.1 Text Alternative';
-            } else {
-                buttonText.innerText = "1.1 Text Alternative";
-            }
-
-        });
+      if (checked === 0) {
+        buttonText.innerText = title;
+      }
+      else {
+        buttonText.innerText = `${title}: ${checked} / ${total} Checked`;
+      }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  })
+});
