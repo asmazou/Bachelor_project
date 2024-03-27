@@ -1,20 +1,8 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <!-- Use the title from a pages frontmatter if it has one -->
-    <title><%= current_page.data.title || "Bachelor" %></title>
-    <%= stylesheet_link_tag "percivable" %>
-
-    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
-  </head>
-  <body>
+<%= javascript_include_tag "perceivable.js" %>
+<%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
 
   <div class="page-header">
-    <h1> 1. Percivable </h1>
+    <h1> 1. Perceivable </h1>
     <p>
       Start with the checklist, go through the tips from there and you are already far in you universal design journey.
     </p>
@@ -38,26 +26,26 @@
         <ul class="checklist" >
           <li class="element">
             <span class="checkbox">
-              <i class="fa-solid fa-check id= "check-icon"></i>
+              <i class="fa-solid fa-check" id= "check-icon"></i>
             </span>
             <span class="element-text">1.1.1a</span>
           </li>
           <li class="element">
             <span class="checkbox">
-              <i class="fa-solid fa-check id= "check-icon"></i>
+              <i class="fa-solid fa-check" id= "check-icon"></i>
             </span>
             <span class="element-text">1.1.1b</span>
           </li>
           <li class="element">
             <span class="checkbox">
-              <i class="fa-solid fa-check id= "check-icon"></i>
+              <i class="fa-solid fa-check " id= "check-icon"></i>
             </span>
             <span class="element-text">1.1.1c</span>
           </li>
         </ul>
       </div>
 
-
+      <div class="checklist-container">
         <div class="btn" >
            <span class="text-btn">1.2 Time Based media</span>
            <span class="arrow-down">
@@ -68,25 +56,26 @@
           <ul class="checklist">
             <li class="element">
                <span class="checkbox">
-                <i class="fa-solid fa-check id= "check-icon"></i>
+                <i class="fa-solid fa-check" id= "check-icon"></i>
                </span>
                <span class="element-text">1.1.1a</span>
             </li>
             <li class="element">
                <span class="checkbox">
-                 <i class="fa-solid fa-check id= "check-icon"></i>
+                 <i class="fa-solid fa-check" id= "check-icon"></i>
                </span>
                <span class="element-text">1.1.1b</span>
             </li>
             <li class="element">
                  <span class="checkbox">
-                    <i class="fa-solid fa-check id= "check-icon"></i>
+                    <i class="fa-solid fa-check" id= "check-icon"></i>
                  </span>
                  <span class="element-text">1.1.1c</span>
             </li>
           </ul>
+        </div>
 
-
+        <div class="checklist-container">
           <div class="btn">
              <span class="text-btn">1.3 Adaptable</span>
              <span class="arrow-down">
@@ -97,23 +86,24 @@
               <ul class="checklist">
                 <li class="element">
                  <span class="checkbox">
-                    <i class="fa-solid fa-check id= "check-icon"></i>
+                    <i class="fa-solid fa-check "id= "check-icon"></i>
                  </span>
                   <span class="element-text">1.1.1a</span>
                   </li>
                   <li class="element">
                     <span class="checkbox">
-                     <i class="fa-solid fa-check id= "check-icon"></i>
+                     <i class="fa-solid fa-check "id= "check-icon"></i>
                     </span>
                     <span class="element-text">1.1.1b</span>
                    </li>
                    <li class="element">
                      <span class="checkbox">
-                       <i class="fa-solid fa-check id= "check-icon"></i>
+                       <i class="fa-solid fa-check "id= "check-icon"></i>
                      </span>
                      <span class="element-text">1.1.1c</span>
                     </li>
                     </ul>
+           </div>
            </div>
 
 
@@ -121,7 +111,5 @@
         <p> 1.1.1a <p>
         </div>
 
-<%= javascript_include_tag "percivable.js" %>
 
-  </body>
-  </html>
+

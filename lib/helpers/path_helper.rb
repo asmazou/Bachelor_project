@@ -8,7 +8,7 @@ module PathHelper
   end
 
   def perceivable_guide_path
-    "#{guides_path}/percivable"
+    "#{guides_path}/perceivable"
   end
 
   def autochecks_path
