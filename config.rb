@@ -5,6 +5,14 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+#
+# Add all helpers
+#
+Dir['lib/helpers/*.rb'].each do |helper|
+  require helper
+  helpers helper.gsub(/\.rb$/, '').split('/').last.camelize.constantize
+end
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
