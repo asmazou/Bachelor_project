@@ -7,11 +7,12 @@
 }
 
 .box {
-  background-color: #e8e8e8;
-  border: 1px solid #000;
+  background-color: #ffffff;
+  border: 0.5px solid gray;
   border-radius: 25px;
   height: 15rem;
   width: 25rem;
+  box-shadow: 10px 10px 5px lightgray;
 
   p {
     font-size: 20px;
