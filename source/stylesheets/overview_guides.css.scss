@@ -2,6 +2,12 @@
 box-sizing: border-box;
 }
 
+//the padding should be on all the content EXCEPT header and footer
+body {
+  padding: 0 40px 0 70px;
+  margin: auto;
+}
+
 .site_title{
   padding: 30px;
   align-items: center;
@@ -29,23 +35,53 @@ box-sizing: border-box;
 
 .container{
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
   box-shadow: #333333;
-  //padding:0px;
+  gap: 2rem;
+  margin: 1.25rem;
 }
+
 .content_link :hover{
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 .content_container{
-  background-color: #e8e8e8;
+  background-color: #92d2f9;
   border-radius: 15px;
   height: 10rem;
   width: 15rem;
-  margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+
+  /*flex: 1 1 15rem;
+  flex-basis: calc((100% - 3 * 0.5rem) / 4 - 1rem); //makes the maximun boxes in a row 4.
+  */
 }
+
 .content_container :hover{
   border: transparent;
+}
+.content_container :first-child {
+  height:5rem;
+  width:7rem;
+  background-color: green;
+}
+.principle_symbols {
+  //fill content to max size of box
+  width: max-content;
+  height: max-content;
+}
+
+//Phone size
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .content_container {
+    flex-basis: calc(100% - 1rem);
+    max-width: 12rem;
+    max-height: 8rem;
+  }
 }
