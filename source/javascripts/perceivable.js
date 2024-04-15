@@ -36,12 +36,24 @@ const arrowLeft = document.querySelector('.left');
 var indexSection = 0;
 
 arrowRight.addEventListener('click', function () {
-  indexSection = (indexSection < 3) ? indexSection + 1 : 3;
-  slides.style = `--slide-index: ${indexSection}`;
+  setSlide(1);
 });
 
 arrowLeft.addEventListener('click', function () {
-  indexSection = (indexSection > 3) ? indexSection - 1 : 0;
-  slides.style = `--slide-index: ${indexSection}`;
+  setSlide(-1);
 });
 
+const setSlide = (delta) => {
+  let nextIndex = indexSection + delta;
+  const maxIndex = slides.children.length - 1;
+  if (nextIndex < 0) {
+    nextIndex = maxIndex;
+  }
+  else if (nextIndex > maxIndex) {
+    nextIndex = 0;
+  }
+
+  console.log(nextIndex, maxIndex);
+  indexSection = nextIndex;
+  slides.style = `--slide-index: ${indexSection}`;
+};
