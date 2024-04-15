@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 *{
  margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@
   cursor: pointer;
 }
 
-.btn .text-btn1{
+.btn .text-btn{
   font-size: 19px;
   color: #000000;
 }
@@ -101,6 +102,7 @@
   transform: scale(1);
 }
 
+/*
 .infobox{
   position: absolute;
   bottom: 80px;
@@ -111,22 +113,57 @@
   height: 55rem;
   background-color: gray;
 }
+*/
 
 
-/*
-.infobox{
-  display: flex;
-  background-color: gray;
-  height: 40rem;
-  width: 50rem;
-  float: right;
+.container-right{
+  margin: 10px auto;
+  width: 45%;
+  position: relative;
+  left: 25%;
+  top: -10.5rem;
+  background-color: lightgray;
 }
 
-.infobox p{
-  font-size: 25px;
-  padding-top: 30px;
-  padding-left: 50px;
-}*/
+.slideShow{
+ // border: 2px solid #333333;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+  height: 100%;
+  display: flex;
+  width: 12rem;
+  transition: all 0.3s ;
+}
+
+.slides section{
+  //flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls .arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.controls .arrow i {
+  font-size: 35px;
+}
+
+.arrow.left{
+  left: 10px;
+}
+
+.arrow.right{
+  right: 10px;
+}
 
 
 
