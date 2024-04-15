@@ -37,11 +37,11 @@ var indexSection = 0;
 
 arrowRight.addEventListener('click', function () {
   indexSection = (indexSection < 3) ? indexSection + 1 : 3;
-  slides.style.transform = 'translate(' + (index) + -25 + '%)';
+  slides.style = `--slide-index: ${indexSection}`;
 });
 
 arrowLeft.addEventListener('click', function () {
   indexSection = (indexSection > 3) ? indexSection - 1 : 0;
-  slides.style.transform = 'translate(' + (indexSection) + -25 + '%)';
+  slides.style = `--slide-index: ${indexSection}`;
 });
 

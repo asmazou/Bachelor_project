@@ -137,6 +137,7 @@
   display: flex;
   width: 12rem;
   transition: all 0.3s ;
+  transform: translateX(calc(-100% * var(--slide-index, 0)));
 }
 
 .slides section{
