@@ -26,3 +26,22 @@ checklistContainers.forEach((checklistContainer) => {
     });
   })
 });
+
+
+const slides = document.querySelector('.slides');
+
+const arrowRight = document.querySelector('.right');
+const arrowLeft = document.querySelector('.left');
+
+var indexSection = 0;
+
+arrowRight.addEventListener('click', function () {
+  indexSection = (indexSection < 3) ? indexSection + 1 : 3;
+  slides.style.transform = 'translate(' + (index) + -25 + '%)';
+});
+
+arrowLeft.addEventListener('click', function () {
+  indexSection = (indexSection > 3) ? indexSection - 1 : 0;
+  slides.style.transform = 'translate(' + (indexSection) + -25 + '%)';
+});
+
