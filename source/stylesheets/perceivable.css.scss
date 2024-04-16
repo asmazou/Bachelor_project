@@ -127,7 +127,7 @@
 
 .slideShow{
  // border: 2px solid #333333;
-  height: 40rem;
+  height: 50rem;
   overflow: hidden;
   position: relative;
 }
@@ -135,23 +135,47 @@
 .slides{
   height: 100%;
   display: flex;
-  width: 12rem;
+  //width: 12rem;
   transition: all 0.3s ;
-  transform: translateX(calc(-100% * var(--slide-index, 0)));
+  flex-wrap: nowrap;
+  transform: translateX(calc(-100% * var(--slide-index, 0))); //Ignorer den røde streken. Vet ikke hvorfor den blir rød, men den funker fortsatt
 }
 
 .slides section{
-  //flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 0 0 100%;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
 }
+
+.slides section h1{
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.slides section p {
+  font-size: 18px;
+  padding-left: 40px;
+  padding-top: 9px;
+  padding-right: 20px;
+}
+
+.slides section p info{
+  font-size: 18px;
+}
+
+.slides section img{ //Husk å endre på alt teksten i html
+  padding-left: 40px;
+  padding-top: 33px;
+}
+
 
 .controls .arrow {
   position: absolute;
-  top: 50%;
+  top: 1%;
   cursor: pointer;
-  transform: translateY(-50%);
+  transform: translateY(-1%);
 }
 
 .controls .arrow i {
@@ -159,7 +183,7 @@
 }
 
 .arrow.left{
-  left: 10px;
+  left: 550px;
 }
 
 .arrow.right{

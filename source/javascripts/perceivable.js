@@ -43,8 +43,10 @@ arrowLeft.addEventListener('click', function () {
   setSlide(-1);
 });
 
+
+
 const setSlide = (delta) => {
-  let nextIndex = indexSection + delta;
+ let nextIndex = indexSection + delta;
   const maxIndex = slides.children.length - 1;
   if (nextIndex < 0) {
     nextIndex = maxIndex;
@@ -57,3 +59,4 @@ const setSlide = (delta) => {
   indexSection = nextIndex;
   slides.style = `--slide-index: ${indexSection}`;
 };
+
