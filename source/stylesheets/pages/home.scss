@@ -1,24 +1,26 @@
 .boxes {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 115px;
   margin-bottom: 15rem;
   gap: 40px;
 }
 
 .box {
-  background-color: #ffffff;
+  //background-image: linear-gradient(to bottom left, #bbeeff 28%, #5588ff 93%);
+  background-image: linear-gradient(to bottom left, #ffffff 4%, #28a5de 100%);
   border: 0.5px solid gray;
   border-radius: 25px;
-  height: 15rem;
-  width: 25rem;
-  box-shadow: 10px 10px 5px lightgray;
+  height: 16rem;
+  width: 28rem;
+  box-shadow: 5px 5px 5px lightgray;
 
   p {
     font-size: 20px;
     text-align: center;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 30px;
+    color: black;
   }
 
   a {
@@ -28,7 +30,7 @@
     text-decoration: none;
     text-align: center;
     padding-left: 0;
-    margin-top: 30px;
+    margin-top: 45px;
   }
 }
 

@@ -1,10 +1,59 @@
 .page-header {
   //background: linear-gradient(to bottom, #318CE7 ,#92d2f9 65% );
-  background: lightgray;
+  background: white;
   padding: 30px;
+  box-shadow: 0 15px 10px -15px #399ac7;
+  justify-content: space-between;
+  flex-direction: row;
 
-  h1 {
+    h1 {
     margin-bottom: 20px;
+    color: #055890;
+  }
+
+  .info-home{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .home-info1{
+    width: 50%;
+    flex-direction: column;
+
+  }
+
+  .home-info1 p {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 100px;
+  }
+
+  .home-info2{
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .home-info2 p {
+    padding-left: 80px;
+    padding-right: 100px;
+  }
+
+  .home-info2 #auto{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+
+  .home-info2 #manual{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    padding-top: 10px;
   }
 
   p {

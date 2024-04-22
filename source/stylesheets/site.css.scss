@@ -9,7 +9,7 @@
 
 header {
   background-color: #ffffff;
-  color: black;
+  color: #055890;
   padding: 15px;
   margin: 0;
   justify-content: space-between;
@@ -46,7 +46,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: #055890;
+  font-weight: bold;
   font-size: 20px;
   text-decoration: none;
   padding-right: 30px;
@@ -61,7 +62,8 @@ body {
 
 
 .footer {
-  background-color: lightgray;
+  background-color: white;
+  box-shadow: 0 -5px 5px -5px #399ac7;
   position: relative;
   padding: 15px 0;
   display: flex;
@@ -70,7 +72,11 @@ body {
 }
 
 .wcag{
-  padding-right: 35px;
+  padding-right: 50px;
+}
+
+.wcag h4{
+  color: #055890;
 }
 
 .wcag p{
@@ -86,6 +92,10 @@ body {
 .wcag li a{
   text-decoration: none;
 
+}
+
+.about h4{
+  color: #055890;
 }
 
 .about p{
