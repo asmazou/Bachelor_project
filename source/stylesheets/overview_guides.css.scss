@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 
 //the padding should be on all the content EXCEPT header and footer
-body {
+body > {
   padding: 0 40px 0 70px;
   margin: auto;
 }
@@ -47,7 +47,9 @@ body {
 }
 
 .content_container{
-  background-color: #92d2f9;
+  background-image: linear-gradient(to bottom left, #ffffff 4%, #28a5de 100%);
+  border: 0.5px solid gray;
+  box-shadow: 5px 5px 5px lightgray;
   border-radius: 15px;
   height: 224px;
   width: 288px;
@@ -56,12 +58,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  //text-align: center;
-
-  /*flex: 1 1 15rem;
-  flex-basis: calc((100% - 3 * 0.5rem) / 4 - 1rem); //makes the maximun boxes in a row 4.
-  */
 }
 
 .content_container :hover{
