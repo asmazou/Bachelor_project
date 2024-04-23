@@ -1,7 +1,11 @@
+body{
+  background-image: linear-gradient(to bottom, #ffffff 19%, #28a5de 95%);
+}
+
 .page-header{
   display: grid;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   padding-left: 50px;
   width: calc(960px / 100 * 100vh);
 }
@@ -56,7 +60,7 @@
   width: 30px;
   height: 15px;
   text-decoration: none;
-  background-color: gray;
+  background-color: #055890;
   color: white;
   border-radius: 10px;
 }
