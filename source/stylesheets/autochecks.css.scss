@@ -3,11 +3,11 @@ body{
 }
 
 .page-header{
-  display: grid;
   align-items: center;
   background-color: #ffffff;
-  padding-left: 50px;
-  width: calc(960px / 100 * 100vh);
+  padding-left: 15.5rem;
+  width: 60rem;
+  left: -50px;
 }
 
 .page-header p{
