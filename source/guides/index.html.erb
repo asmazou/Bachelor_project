@@ -1,84 +1,90 @@
- <%= stylesheet_link_tag "overview_guides" %>
+<%= stylesheet_link_tag "overview_guides" %>
  <%= javascript_include_tag "site" %>
 
 
 <div class="site_title">
     <h1 id="site title"> Manual Accessibility Checkers </h1>
-    <br>
+
         <p> To achieve universal use of your website here are some important things to make sure of.
         By clicking each theme you open a page with tips and tricks as well as code examples
         for html and css.
         </p>
 </div>
 
+<section class= "guides">
+    <div class= "wcag_guides">
+        <div class= "guides_header">
+            <h2 class= "guides_title" id= "section title"> WCAG Principles </h2>
+            <p> Checklist, tests and code examples for the Web Content Accessibility Guidelines (WCAG) principles.
+        </div>
+        <div class= "container">
+            <a class= "content_link" href= guides/perceivable>
+                <div class="content_container" alt="Button to take you to Wcag Guide 1.Perceivable">
+                    <img src= "images/low-vision.svg" alt="">
+                    <h3>1.Perceivable</h3>
 
-<div class= "wcag_guides">
-    <div class= "guides_header">
-        <h2 class= "guides_title" id= "section title"> WCAG Principles </h2>
-        <p> Checklist, tests and code examples for the Web Content Accessibility Guidelines (WCAG) principles.
+                </div>
+            </a>
+
+            <a class= "content_link" href="guides/operable" >
+                <div class="content_container">
+                    <img src= "images/hand-paper.svg" alt="">
+                    <h3> 2.Operable </h3>
+                </div>
+            </a>
+
+            <a class= "content_link" href="guides/understandable">
+                <div class="content_container">
+                    <img src= "images/head-side-brain.svg" alt="">
+                    <h3> 3.Understandable </h3>
+                </div>
+            </a>
+            <a class = "content_link" href="guides/robust">
+                <div class="content_container">
+                    <img src= "images/devices-robust.svg" alt="">
+                    <h3> 4.Robust </h3>
+
+                </div>
+            </a>
+        </div>
     </div>
-    <div class= "container">
-        <a class= "content_link" href="<%= perceivable_guide_path %>">
-            <div class="content_container" lable="Button to take you to Wcag Guide 1.Percivable">
-                <p class= "content_text">1.Percivable</p>
 
-            </div>
-        </a>
+    <div class= "component_guides">
+        <div class= "guides_header">
+            <h4 class= "guides_title"> Components </h4>
+            <p> Checklists, tests and code examples for a selection of common components. </p>
+        </div>
 
-        <a class= "content_link" href="guides/operable" >
-            <div class="content_container">
-                <p> 2.Operable </p>
-            </div>
-        </a>
+        <div class="container">
+            <a class= "content_link" href= "/guides/button">
+                <div class="content_container">
+                    <h5> Button </h5>
+                </div>
+            </a>
 
-        <a class= "content_link" href="guides/understandable">
-            <div class="content_container">
-                <p> 3.Understandable </p>
-            </div>
-        </a>
-        <a class = "content_link" href="guides/robust">
-            <div class="content_container">
-                <p> 4.Robust </p>
-            </div>
-        </a>
+            <a class= "content_link" href= "/guides/footer">
+                <div class="content_container">
+                    <h5> Footer </h5>
+                </div>
+            </a>
+
+            <a class= "content_link" href= "/guides/header">
+                <div class="content_container">
+                    <h5> Header </h5>
+                </div>
+            </a>
+
+            <a class= "content_link" href= "/guides/list">
+                <div class="content_container">
+                    <h5> Lists </h5>
+                </div>
+            </a>
+
+            <a class= "content_link" href= "/guides/table">
+                <div class="content_container">
+                    <h5> Table </h5>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
-
-<div class= "component_guides">
-    <div class= "guides_header">
-        <h3 class= "guides_title"> Components </h2>
-        <p> Checklists, tests and code examples for a selection of common components. </p>
-    </div>
-
-    <div class="container">
-        <a class= "content_link" href= "/guides/button">
-            <div class="content_container">
-                <p> Button </p>
-            </div>
-        </a>
-
-        <a class= "content_link" href= "/guides/footer">
-            <div class="content_container">
-                <p> Footer </p>
-            </div>
-        </a>
-
-        <a class= "content_link" href= "/guides/header">
-            <div class="content_container">
-                <p> Header </p>
-            </div>
-        </a>
-
-        <a class= "content_link" href= "/guides/list">
-            <div class="content_container">
-                <p> Lists </p>
-            </div>
-        </a>
-
-        <a class= "content_link" href= "/guides/table">
-            <div class="content_container">
-                <p> Table </p>
-            </div>
-        </a>
-    </div>
-</div>
+</section>
