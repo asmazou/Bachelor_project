@@ -3,17 +3,24 @@ body{
 }
 
 .page-header{
+  position: relative;
   align-items: center;
   background-color: #ffffff;
   padding-left: 15.5rem;
-  width: 60rem;
-  left: -50px;
+  width: 47rem;
+  left: 13rem;
+}
+
+.page-header h1{
+  position: relative;
+  right: 12rem;
 }
 
 .page-header p{
-  text-align: justify;
+  position: relative;
+  text-align: left;
   display: flex;
-  justify-content: center;
+  right: 12rem;
 }
 
 .box-container {
