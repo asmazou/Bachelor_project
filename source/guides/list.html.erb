@@ -1,0 +1,159 @@
+
+<%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
+
+  <div class="page-header">
+    <h1> List </h1>
+    <p>
+    The users ability to perceive and understand the content on the website is the most important part of a developers job. This is why WCAGs 1st principle is Perceivable. We have broken the Guidelines into Action Points, to make it more understandable for web developers.
+    </p>
+    <p>
+    By going through the checklist below on the left you will get a starting point, and related tips, tricks and examples on the right for every checkpoint.
+    The content is based off Web Content Accessibility Guidelines (WCAG), what we provide are simplified language, and easy action points for you to better the Universal Design of your website or application.
+    </p>
+
+  </div>
+
+  <div class="container">
+
+  <div class="container-left">
+      <div class="checklist-container">
+        <div class="btn" >
+          <span class="text-btn" id="carousel-btn">1.1 Text Alternativ</span>
+          <span class="arrow-down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <ul class="checklist" >
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text">1.1.1</span>
+          </li>
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text">1.1.1</span>
+          </li>
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check " id= "check-icon"></i>
+            </span>
+            <span class="element-text">1.1.1</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="checklist-container">
+        <div class="btn" >
+           <span class="text-btn" id="carousel-btn">1.2 Time Based media</span>
+           <span class="arrow-down">
+                 <i class="fa-solid fa-chevron-down"></i>
+           </span>
+          </div>
+
+          <ul class="checklist">
+            <li class="element">
+               <span class="checkbox" >
+                <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text">1.2.1</span>
+            </li>
+            <li class="element">
+               <span class="checkbox">
+                 <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text">1.2.1</span>
+            </li>
+            <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check" id= "check-icon"></i>
+                 </span>
+                 <span class="element-text">1.2.1</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist-container">
+          <div class="btn">
+             <span class="text-btn" id="carousel-btn">1.3 Adaptable</span>
+             <span class="arrow-down">
+               <i class="fa-solid fa-chevron-down"></i>
+             </span>
+            </div>
+
+              <ul class="checklist">
+                <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check "id= "check-icon"></i>
+                 </span>
+                  <span class="element-text">1.3.1</span>
+                  </li>
+                  <li class="element">
+                    <span class="checkbox">
+                     <i class="fa-solid fa-check "id= "check-icon"></i>
+                    </span>
+                    <span class="element-text">1.3.1</span>
+                   </li>
+                   <li class="element">
+                     <span class="checkbox">
+                       <i class="fa-solid fa-check "id= "check-icon"></i>
+                     </span>
+                     <span class="element-text">1.3.1</span>
+                    </li>
+                    </ul>
+           </div>
+           </div>
+
+        <div class="container-right">
+          <div class="slideShow">
+          <div class="slides">
+          <section>
+          <h1>1.1.1a Text Alternativ for non-text content</h1>
+          <img src="/images/1.1.1 text alternativ.png" alt="Bilde av kode" width="455" height="50">
+          <p class="Info"> Images only for decoration or otherwise not presented to the user need to not be disruptive for assistive technology.
+           Even more simple, use CSS for decorative pieces. </p>
+          <p class"Info"> Give non-text content a descriptive text alternative and if its complex add on a meaningful caption. </p>
+
+          <br>
+
+          <img src="/images/1.1.2.png" alt="HTML av kode" width="455" height="50">
+          <p class"Info"> You can also use aria-label/aria-labelby instead of alt </p>
+
+          <br>
+
+          <img src="/images/1.1.3.png" alt="HTML av kode" width="455" height="50">
+          <p class"Info"> Is the non-text content or object complex? Use long description. </p>
+
+          <br>
+
+          <img src="/images/1.1.4.png" alt="HTML av kode" width="455" height="50">
+          <p class"Info"> Convey the possible interaction with non-text content. </p>
+
+
+          </section>
+          <section>Innhold 2</section>
+          <section>Innhold 3</section>
+          <section>Innhold 4</section>
+          </div>
+
+          <div class="controls">
+          <span class="right arrow">
+          <i class="material-icons">keyboard_arrow_right</i>
+          </span>
+          <span class="left arrow">
+          <i class="material-icons"> keyboard_arrow_left</i>
+          </span>
+
+          </div>
+         </div>
+</div>
+
+        </div>
+
+
+
+
+<%= javascript_include_tag "list.js" %>

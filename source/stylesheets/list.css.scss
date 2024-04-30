@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  display: flex;
+  max-width: 100%;
+
+}
+
+.container-left{
+  display: flex;
+  //width: 50rem;
+  width: 40%;
+  margin-top: 30px;
+  padding-left: 20px;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+/*
+.container-left{
+  position: relative;
+  width: 30em;
+  margin-top: 5rem;
+  margin-left: 50px;
+}
+*/
+
+.btn{
+  /* background-color: gray;*/
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  padding: 0 16px ;
+  cursor: pointer;
+}
+
+.btn .text-btn{
+  font-size: 19px;
+  color: #000000;
+}
+.btn .arrow-down{
+  display: flex;
+  font-size: 19px;
+  height: 20px;
+  width: 20px;
+  color: #000000;
+  transition: 0.4s;
+}
+
+.btn.open .arrow-down{
+  transform: rotate(-180deg);
+}
+
+.checklist{
+  position: relative;
+  margin-top: 15px;
+  padding: 15px;
+  display: none;
+  color: white;
+}
+
+
+.btn.open~ .checklist{
+  display: block;
+}
+
+.checklist .element{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 55px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.checklist .element:hover{
+  background-color: #e8e8e8;
+}
+
+.element .element-text{
+  color: black;
+  font-size: 17px;
+}
+
+.element .checkbox{
+  display: flex;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-right: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.element.checked .checkbox{
+  background-color: black;
+  border-color: #000000;
+}
+
+.checkbox .check-icon{
+  color: white;
+  font-size: 10px;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+
+}
+
+.element.checked .check-icon{
+  color: white;
+  transform: scale(1);
+}
+
+.container-right{
+  display: flex;
+  //width: 50rem;
+  width: 60%;
+  background-color: lightgray;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/*
+.container-right{
+  margin: 10px auto;
+  width: 45%;
+  position: relative;
+  left: 25%;
+  top: -10.5rem;
+  background-color: lightgray;
+}*/
+
+.slideShow{
+  // border: 2px solid #333333;
+  height: 50rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+  height: 100%;
+  display: flex;
+  //width: 12rem;
+  transition: all 0.3s ;
+  flex-wrap: nowrap;
+  transform: translateX(calc(-100% * var(--slide-index, 0))); //Ignorer den røde streken. Vet ikke hvorfor den blir rød, men den funker fortsatt
+}
+
+.slides section{
+  flex: 0 0 100%;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.slides section h1{
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.slides section p {
+  font-size: 18px;
+  padding-left: 40px;
+  padding-top: 9px;
+  padding-right: 20px;
+}
+
+.slides section p .info{
+  font-size: 18px;
+}
+
+.slides section img{ //Husk å endre på alt teksten i html
+  padding-left: 40px;
+  padding-top: 33px;
+}
+
+
+.controls .arrow {
+  position: absolute;
+  top: 1%;
+  cursor: pointer;
+  transform: translateY(-1%);
+}
+
+.controls .arrow i {
+  font-size: 35px;
+}
+
+.arrow.left{
+  left: 35rem;
+}
+
+.arrow.right{
+  right: 10px;
+}
