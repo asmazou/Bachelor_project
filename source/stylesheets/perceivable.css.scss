@@ -133,7 +133,7 @@
 }
 
 .container-right{
-  display: flex;
+  //display: flex;
   //width: 50rem;
   width: 60%;
   background-color: lightgray;
@@ -154,15 +154,14 @@
 
 .slideShow{
  // border: 2px solid #333333;
+  position: relative;
   height: 50rem;
   overflow: hidden;
-  position: relative;
 }
 
 .slides{
   height: 100%;
   display: flex;
-  //width: 12rem;
   transition: all 0.3s ;
   flex-wrap: nowrap;
   transform: translateX(calc(-100% * var(--slide-index, 0))); //Ignorer den røde streken. Vet ikke hvorfor den blir rød, men den funker fortsatt
@@ -170,9 +169,6 @@
 
 .slides section{
   flex: 0 0 100%;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
 }
 
 .slides section h1{
@@ -197,12 +193,18 @@
   padding-top: 33px;
 }
 
+.controls {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+}
 
 .controls .arrow {
-  position: absolute;
-  top: 1%;
+  //position: absolute;
+  //top: 1%; //denne må kanskje endres for å få pilen på riktig plass
   cursor: pointer;
-  transform: translateY(-1%);
+  //transform: translateY(-1%);
 }
 
 .controls .arrow i {
