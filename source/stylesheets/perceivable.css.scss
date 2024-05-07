@@ -1,20 +1,9 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// General
 *{
- margin: 0;
+  margin: 0;
   padding: 0;
-}
-
-
-
-#perceivable-logo{
-  //consider making the content of the page-header flexbox?
-  position: relative;
-  top: -16rem;
-  padding-right: 60px;
-  right: 9rem;
-  width: 12rem;
-  height: 12rem;
-  float: right;
 }
 
 .container{
@@ -22,6 +11,25 @@
   width: 100%;
 
 }
+
+// Ingress box //
+
+#perceivable-logo{
+  //consider making the content of the page-header flexbox? Done:)
+  //position: relative;
+  top: -16rem;
+  padding: 60px;
+  right: 9rem;
+  width: 12rem;
+  height: auto;
+  float: right;
+  }
+
+.page-header{
+  display: flex;
+}
+
+// Checklist box //
 
 .container-left{
   display: flex;
@@ -132,6 +140,8 @@
   transform: scale(1);
 }
 
+// Example box //
+
 .container-right{
   //display: flex;
   //width: 50rem;
@@ -193,6 +203,7 @@
   padding-top: 33px;
 }
 
+//Arrow buttons
 .controls {
   position: absolute;
   display: flex;
@@ -220,14 +231,21 @@
 }
 
 
-
+////Tablet
+//@media (max-width: 800px) {
+//  .container {
+//    flex-direction: column;
+//    max-width: 100%;
+//
+//  }
+//}
 
 
 //Phone size
 @media (max-width: 600px) {
 
   .container{
-    display: flex;
     flex-direction: column;
   }
 }
+
