@@ -1,3 +1,7 @@
+document.querySelectorAll('[data-component="checklist"]').forEach((component) => {
+    const checklistContainers = component.querySelectorAll(".checklist-container");
+})
+
 const checklistContainers = document.querySelectorAll(".checklist-container");
 
 checklistContainers.forEach((checklistContainer) => {
@@ -28,10 +32,10 @@ checklistContainers.forEach((checklistContainer) => {
 });
 
 
-const slides = document.querySelector('.slides');
+const slides = component.querySelector('.slides');
 
-const arrowRight = document.querySelector('.right');
-const arrowLeft = document.querySelector('.left');
+const arrowRight = component.querySelector('.right');
+const arrowLeft = component.querySelector('.left');
 
 var indexSection = 0;
 
