@@ -19,7 +19,7 @@
 
 .container{
   display: flex;
-  max-width: 100%;
+  width: 100%;
 
 }
 
@@ -71,8 +71,7 @@
 
 .checklist{
   position: relative;
-  margin-top: 15px;
-  padding: 15px;
+  padding: 0px 15px 15px 15px;
   display: none;
   color: white;
 }
@@ -86,10 +85,10 @@
   display: flex;
   list-style: none;
   align-items: center;
-  height: 55px;
+  min-height: 55px;
   cursor: pointer;
   transition: 0.4s;
-  padding: 0 15px;
+  padding: 10px 15px;
   border-radius: 5px;
 
 }
