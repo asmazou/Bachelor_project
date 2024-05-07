@@ -1,23 +1,23 @@
 <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
+<%= stylesheet_link_tag "button" %>
 
   <div class="page-header">
     <h1> Button </h1>
     <p>
-    The users ability to perceive and understand the content on the website is the most important part of a developers job. This is why WCAGs 1st principle is Perceivable. We have broken the Guidelines into Action Points, to make it more understandable for web developers.
+    A button triggers an action after the user has clicked on it. When triggered, an action is followed (call to action).
     </p>
     <p>
-    By going through the checklist below on the left you will get a starting point, and related tips, tricks and examples on the right for every checkpoint.
-    The content is based off Web Content Accessibility Guidelines (WCAG), what we provide are simplified language, and easy action points for you to better the Universal Design of your website or application.
+    Button and links should not be used as the same, where links direct the user to another webpage.
     </p>
 
   </div>
 
-  <div class="container">
+ <div class="container">
 
   <div class="container-left">
       <div class="checklist-container">
         <div class="btn" >
-          <span class="text-btn" id="carousel-btn">1.1 Text Alternativ</span>
+          <span class="text-btn" id="carousel-btn">Action</span>
           <span class="arrow-down">
             <i class="fa-solid fa-chevron-down"></i>
           </span>
@@ -28,26 +28,27 @@
             <span class="checkbox">
               <i class="fa-solid fa-check" id= "check-icon"></i>
             </span>
-            <span class="element-text">1.1.1</span>
+            <span class="element-text">Submit button
+            <p> A submit button used on a form should change context when clicked on  (G80).
+                A submit button should be present in every form component (H32).
+            </p>
+            </span>
           </li>
           <li class="element">
             <span class="checkbox">
               <i class="fa-solid fa-check" id= "check-icon"></i>
             </span>
-            <span class="element-text">1.1.1</span>
-          </li>
-          <li class="element">
-            <span class="checkbox">
-              <i class="fa-solid fa-check " id= "check-icon"></i>
+            <span class="element-text">Button with select element
+            <p>When selecting an option from the select element, the context is not changes unless the submit button is triggered by the user (H84).
+            </p>
             </span>
-            <span class="element-text">1.1.1</span>
           </li>
         </ul>
       </div>
 
       <div class="checklist-container">
         <div class="btn" >
-           <span class="text-btn" id="carousel-btn">1.2 Time Based media</span>
+           <span class="text-btn" id="carousel-btn">Content</span>
            <span class="arrow-down">
                  <i class="fa-solid fa-chevron-down"></i>
            </span>
@@ -58,26 +59,26 @@
                <span class="checkbox" >
                 <i class="fa-solid fa-check" id= "check-icon"></i>
                </span>
-               <span class="element-text">1.2.1</span>
+               <span class="element-text">Button label
+               <p>The button text/label should be clear and descriptive, and describing the action of the button.
+               </p>
+               </span>
             </li>
             <li class="element">
                <span class="checkbox">
                  <i class="fa-solid fa-check" id= "check-icon"></i>
                </span>
-               <span class="element-text">1.2.1</span>
-            </li>
-            <li class="element">
-                 <span class="checkbox">
-                    <i class="fa-solid fa-check" id= "check-icon"></i>
-                 </span>
-                 <span class="element-text">1.2.1</span>
+               <span class="element-text">Button with input field
+               <p>A button rendered adjacent to an input field should be labeled to describe the input field (G167).
+               </p>
+               </span>
             </li>
           </ul>
         </div>
 
         <div class="checklist-container">
           <div class="btn">
-             <span class="text-btn" id="carousel-btn">1.3 Adaptable</span>
+             <span class="text-btn" id="carousel-btn">Style</span>
              <span class="arrow-down">
                <i class="fa-solid fa-chevron-down"></i>
              </span>
@@ -88,50 +89,94 @@
                  <span class="checkbox">
                     <i class="fa-solid fa-check "id= "check-icon"></i>
                  </span>
-                  <span class="element-text">1.3.1</span>
+                  <span class="element-text">Same design
+                  <p>Repeated button should have the same design within the same website.
+                  </p>
+                  </span>
                   </li>
                   <li class="element">
                     <span class="checkbox">
                      <i class="fa-solid fa-check "id= "check-icon"></i>
                     </span>
-                    <span class="element-text">1.3.1</span>
+                    <span class="element-text">Primary, Secondary, Tertiary buttons
+                    <p>Categorize the button in types of priorities and make each category have the same design throughout the website.
+                    </p>
+                    </span>
                    </li>
-                   <li class="element">
-                     <span class="checkbox">
-                       <i class="fa-solid fa-check "id= "check-icon"></i>
-                     </span>
-                     <span class="element-text">1.3.1</span>
-                    </li>
+
                     </ul>
            </div>
+
+            <div class="checklist-container">
+               <div class="btn">
+                <span class="text-btn" id="carousel-btn">Accessibility</span>
+                <span class="arrow-down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+                </div>
+
+                <ul class="checklist">
+                 <li class="element">
+                 <span class="checkbox">
+                   <i class="fa-solid fa-check "id= "check-icon"></i>
+                 </span>
+                 <span class="element-text">Keyboard navigation
+                 <p>When using keyboard, no changes should occur when a component is on focus (G107) (H84).
+                 </p>
+                 </span>
+                 </li>
+                 <li class="element">
+                 <span class="checkbox">
+                 <i class="fa-solid fa-check "id= "check-icon"></i>
+                 </span>
+                 <span class="element-text">Alt attribute on images as button
+                 <p>Image elements used as submit buttons should have an alt attribute to label the button action(H36).
+                 </p>
+                 </span>
+                 </li>
+               </ul>
+              </div>
+
            </div>
 
         <div class="container-right">
           <div class="slideShow">
           <div class="slides">
           <section>
-          <h1>1.1.1a Text Alternativ for non-text content</h1>
-          <img src="/images/1.1.1 text alternativ.png" alt="Bilde av kode" width="455" height="50">
-          <p class="Info"> Images only for decoration or otherwise not presented to the user need to not be disruptive for assistive technology.
-           Even more simple, use CSS for decorative pieces. </p>
-          <p class"Info"> Give non-text content a descriptive text alternative and if its complex add on a meaningful caption. </p>
+          <h1>Button</h1>
 
-          <br>
+          <h2>Call to action</h2>
+           <ul>
+            <li>Sign up</li>
+            <li>Learn more</li>
+           </ul>
 
-          <img src="/images/1.1.2.png" alt="HTML av kode" width="455" height="50">
-          <p class"Info"> You can also use aria-label/aria-labelby instead of alt </p>
+           <br>
 
-          <br>
+           <h2>Forms to submit (3.2.2 On input about predictable)</h2>
+           <ul>
+            <li>Submit button</li>
+            <li>Search button </li>
+           </ul>
 
-          <img src="/images/1.1.3.png" alt="HTML av kode" width="455" height="50">
-          <p class"Info"> Is the non-text content or object complex? Use long description. </p>
+           <br>
 
-          <br>
+           <h2>Navigation</h2>
+           <ul>
+            <li>Next/previous page</li>
+           </ul>
 
-          <img src="/images/1.1.4.png" alt="HTML av kode" width="455" height="50">
-          <p class"Info"> Convey the possible interaction with non-text content. </p>
+           <br>
 
+           <h2>Dont use button component when</h2>
+           <ul>
+             <li>You dont want to encourage an action. For example, you want them to be able to navigate through one
+             section of pages, but you dont want to encourage the user to navigate through other section within this section. </li>
+           </ul>
 
+           <br>
+
+           <img id="code-button" src="/images/code-button.png" alt=".">
           </section>
           <section>Innhold 2</section>
           <section>Innhold 3</section>
@@ -154,5 +199,6 @@
 
 
 
-
 <%= javascript_include_tag "button.js" %>
+
+

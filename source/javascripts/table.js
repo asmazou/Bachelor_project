@@ -59,3 +59,4 @@ const setSlide = (delta) => {
     indexSection = nextIndex;
     slides.style = `--slide-index: ${indexSection}`;
 };
+
