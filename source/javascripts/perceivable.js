@@ -1,8 +1,6 @@
 document.querySelectorAll('[data-component="checklist"]').forEach((component) => {
     const checklistContainers = component.querySelectorAll(".checklist-container");
-})
 
-const checklistContainers = document.querySelectorAll(".checklist-container");
 
 checklistContainers.forEach((checklistContainer) => {
   const button = checklistContainer.querySelector(".btn");
@@ -49,6 +47,8 @@ arrowLeft.addEventListener('click', function () {
 
 
 
+
+
 const setSlide = (delta) => {
  let nextIndex = indexSection + delta;
   const maxIndex = slides.children.length - 1;
@@ -64,3 +64,4 @@ const setSlide = (delta) => {
   slides.style = `--slide-index: ${indexSection}`;
 };
 
+});
