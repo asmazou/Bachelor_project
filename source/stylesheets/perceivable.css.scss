@@ -17,17 +17,16 @@
 #perceivable-logo{
   //consider making the content of the page-header flexbox? Done:)
   //position: relative;
-  top: -16rem;
-  padding: 60px;
-  right: 9rem;
-  width: 12rem;
+  margin-left: 65.5rem;
+  margin-top: -14.4rem;
+  width: 13rem;
   height: auto;
-  float: right;
   }
 
 .page-header{
   display: flex;
 }
+
 
 // Checklist box //
 
@@ -165,7 +164,7 @@
 .slideShow{
  // border: 2px solid #333333;
   position: relative;
-  height: 50rem;
+  height: 60rem;
   overflow: hidden;
 }
 
