@@ -1,10 +1,13 @@
+---
+title: Guides
+---
+
 <%= stylesheet_link_tag "overview_guides" %>
  <%= javascript_include_tag "site" %>
 
 
+<div> #skal være en container for å midtstille innholdet men ikke teksten (den skal være venstrestilt)
 <div class="site_title">
-# breadcrumbs som per nå ikke virker...
-    <%= breadcrumbs(current_page, separator: '/', wrapper: :div) %>
     <h1 id="site title"> Manual Accessibility Checkers </h1>
 
         <p> To achieve universal use of your website here are some important things to make sure of.
@@ -12,7 +15,7 @@
         for html and css.
         </p>
 </div>
-
+</div>
 <section class= "guides">
     <div class= "wcag_guides">
         <div class= "guides_header">

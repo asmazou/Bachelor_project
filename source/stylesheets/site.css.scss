@@ -123,4 +123,16 @@ a {
   }
 }
 
+.breadcrumbs {
+  list-style: none;
+  margin: 10px;
+  min-font-size: 18px;
+  text-decoration: none;
+
+  li{
+    display: inline-block;
+
+  }
+}
+
 
