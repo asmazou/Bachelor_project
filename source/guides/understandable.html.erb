@@ -166,6 +166,8 @@ title: Understandable
             <p class="Info"> The attribute lang can be used in any HTML element. </p>
 
             </section>
+
+            <section>
             <h1>3.2 Predictable</h1>
             <br>
 
@@ -191,12 +193,101 @@ title: Understandable
 
             <h3> Code Example: </h3>
 
+            <br>
 
-            <section>
+            <h2> 3.2.3 Consistent Navigation </h2>
+            <p class="Info"> Navigational mechanisms that are repeated on multiple web pages within a set of
+            web pages occur in the same relative order each time they are repeated, unless a change is initiated by
+            the user.</p>
+            <br>
+
+            <p class="Info"> Objects/elements that repeats in multiplepages (minimum two) in the same website,
+             should operate in the same relative order in all the pages that exist.</p>
+            <p class="Info"> Navigation bar should have the same position on all the pages and the elements
+            should have the same relative order. </p>
+
+            <br>
+
+            <h2> 3.2.4 Consistent Identification </h2>
+            <p class="Info">Components that have the same functionality within a set of webpages are
+            identified consistently.</p>
+            <p class="Info"> Using labels, names, and text alternatives consistently for content that has the same
+             functionality.</p>
 
             </section>
-            <section>Innhold 3</section>
-            <section>Innhold 4</section>
+
+            <section>
+            <h1>3.3 Input Assistance</h1>
+            <br>
+
+            <h2> 3.3.1 Error Identification </h2>
+            <p class="Info"> If an input error is automatically detected, the item that is in error is identified and the
+            error is described to the user in text.</p>
+
+            <p class="Info"> When a mandatory form element is detecting a field that is not filled or missing,
+            the user must receive a text error message and the error message has to describe the error. </p>
+
+            <br>
+
+            <p class="Info"> When it is detected that the data input is wrong and requires a specific type of data, then
+            the user must receive a text error message. </p>
+
+            <br>
+
+            <h3> Code Example: </h3>
+            <p class="Info"> Input data missing: </p>
+            <img src="/images/3.3.1-datamissing.png" alt="Code example" width="455" height="120">
+            <br>
+
+            <p class="Info"> Incorrect data: </p>
+            <img src="/images/3.3.1-incorrectdata.png" alt="Code example" width="455" height="120">
+            <br>
+
+            <h2> 3.3.2 Labels or Instruction </h2>
+            <p class="Info"> Labels or instructions are provided when content requires user input. </p>
+            <p class="Info"> User input means an input element where it requires the user to interact with data,
+            for example: put in data, change data, add or confirm information when a user is filling a form. </p>
+            <br>
+
+            <p class="Info"> The input element has a visual identification in a form of label, instruction, icon, image,
+            symbol and/or color.</p>
+            <br>
+
+            <h3> Code Example </h3>
+            <img src="/images/3.3.2.png" alt="Code example" width="480" height="90">
+
+            <br>
+
+            <h2> 3.3.3 Error Suggestion </h2>
+            <p class="Info"> If an input error is automatically detected and suggestions for correction are known, then
+            the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.</p>
+
+            <p class="Info"> When the input element is detecting an error, the user will get a suggestion of how the error
+            can be corrected. This requirement applies to: Mandatory input element, specific input data or value, or when the
+            input has wrong value or format.</p>
+
+            <br>
+
+            <h3> Code Example: </p>
+            <p class="Info">How to use aria-alertdialog to notify someone they have entered a invalid data.</p>
+            <img src="/images/3.3.3.png" alt="Code example" width="455" height="130">
+            <br>
+
+            <h2> 3.3.4 Error Prevention </h2>
+            <p class="Info">For webpages that cause legal commitments or financial transactions for the user to occur,
+             that modify or delete user-controllable data in data storage systems, or submit user test responses.</p>
+
+            <p class="Info"> To achieve this criteria, at least one of the following alternatives are required: </p>
+            <p class="Info"> Reversible: Submissions are reversible. </p>
+            <p class="Info"> Checked: Data entered by the user is checked for input errors and the user is provided an
+            opportunity to correct them.</p>
+            <p class="Info"> Confirmed: A mechanism is available for reviewing, confirming, and correcting information before
+             finalizing the submission.</p>
+
+
+
+            </section>
+
             </div>
 
             <div class="controls">

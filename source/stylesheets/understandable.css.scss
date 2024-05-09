@@ -162,9 +162,9 @@
 
 .slideShow{
   // border: 2px solid #333333;
-  height: 80rem;
+  height: 150rem;
   overflow: hidden;
-  position: relative;
+  //position: relative;
 }
 
 .slides{
@@ -178,7 +178,6 @@
 
 .slides section{
   flex: 0 0 100%;
-
   //display: flex;
   //justify-content: center;
   //align-items: center;
