@@ -196,12 +196,19 @@
   padding-top: 33px;
 }
 
+//Arrow buttons
+.controls {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 0;
+}
 
 .controls .arrow {
-  position: absolute;
-  top: 1%;
+  //position: absolute;
+  //top: 1%; //denne må kanskje endres for å få pilen på riktig plass
   cursor: pointer;
-  transform: translateY(-1%);
+
 }
 
 .controls .arrow i {
@@ -215,4 +222,5 @@
 .arrow.right{
   right: 10px;
 }
+
 

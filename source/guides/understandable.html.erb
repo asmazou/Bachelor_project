@@ -3,6 +3,7 @@ title: Understandable
 ---
 
 <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
+<%= stylesheet_link_tag "understandable" %>
 
 <div class="page-header">
     <h1> 3. Understandable </h1>
@@ -13,7 +14,7 @@ title: Understandable
       The content is based off Web Content Accessibility Guidelines (WCAG),
     what we provide are suggestions and you are encouraged to find different solutions as well
     </p>
-     <img id="understandable-logo" src="/images/head-side-brain.svg" alt="Understandable logo">
+
   </div>
 
 
@@ -35,13 +36,14 @@ title: Understandable
               <span class="checkbox">
                 <i class="fa-solid fa-check" id= "check-icon"></i>
               </span>
-              <span class="element-text">3.1.1 Language of the page</span>
+              <span class="element-text">Check that the HTML element has a lang attribute.</span>
             </li>
             <li class="element">
               <span class="checkbox">
                 <i class="fa-solid fa-check" id= "check-icon"></i>
               </span>
-              <span class="element-text">3.1.2 Language of the parts</span>
+              <span class="element-text">Check that the human language of the content of the element is the same as the
+              inherited language for the element as specified in HTML.</span>
             </li>
           </ul>
         </div>
@@ -59,7 +61,7 @@ title: Understandable
                  <span class="checkbox" >
                   <i class="fa-solid fa-check" id= "check-icon"></i>
                  </span>
-                 <span class="element-text">3.2.1 Focus</span>
+                 <span class="element-text">Check that no changes of context occur when any components receives focus. </span>
               </li>
               <li class="element">
                  <span class="checkbox">
@@ -71,13 +73,15 @@ title: Understandable
                    <span class="checkbox">
                       <i class="fa-solid fa-check" id= "check-icon"></i>
                    </span>
-                   <span class="element-text">3.2.3 Consistent Navigation</span>
+                   <span class="element-text">For each navigational component, check that the links or programmatic
+                    references always is in the same relative order.</span>
               </li>
               <li class="element">
                <span class="checkbox">
                  <i class="fa-solid fa-check" id= "check-icon"></i>
                </span>
-               <span class="element-text">3.2.4 Consistent Identification</span>
+               <span class="element-text">Check that each component is associated with the text that identifies it.
+               </span>
                </li>
             </ul>
           </div>
@@ -95,25 +99,28 @@ title: Understandable
                    <span class="checkbox">
                       <i class="fa-solid fa-check "id= "check-icon"></i>
                    </span>
-                    <span class="element-text">3.3.1 Error Identification</span>
+                    <span class="element-text">Check that a text description is provided identifying the mandatory
+                    fields that was not completed.</span>
                     </li>
                     <li class="element">
                       <span class="checkbox">
                        <i class="fa-solid fa-check "id= "check-icon"></i>
                       </span>
-                      <span class="element-text">3.3.2 Labels or Instruction</span>
+                      <span class="element-text">Check that there is a label element that identifies the purpose of the
+                      control before/after the input, textarea, or select element.</span>
                      </li>
                      <li class="element">
                        <span class="checkbox">
                          <i class="fa-solid fa-check "id= "check-icon"></i>
                        </span>
-                       <span class="element-text">3.3.3 Error Suggestion</span>
+                       <span class="element-text">Trigger the error that causes the alertdialog to appear.</span>
                       </li>
                       <li class="element">
                       <span class="checkbox">
                           <i class="fa-solid fa-check "id= "check-icon"></i>
                        </span>
-                       <span class="element-text">3.3.4 Error Prevention</span>
+                       <span class="element-text">Before submission, the website has a mechanism that allows user to
+                       review all information.</span>
                        </li>
                       </ul>
              </div>
@@ -123,30 +130,71 @@ title: Understandable
             <div class="slideShow">
             <div class="slides">
             <section>
-            <h1>1.1.1a Text Alternativ for non-text content</h1>
-            <img src="/images/1.1.1 text alternativ.png" alt="Bilde av kode" width="455" height="50">
-            <p class="Info"> Images only for decoration or otherwise not presented to the user need to not be disruptive for assistive technology.
-             Even more simple, use CSS for decorative pieces. </p>
-            <p class="Info"> Give non-text content a descriptive text alternative and if its complex add on a meaningful caption. </p>
+            <h1>3.1 Readable</h1>
+            <br>
+
+            <p class="Info"> The content must be readable and understandable. </p>
 
             <br>
 
-            <img src="/images/1.1.2.png" alt="HTML av kode" width="455" height="50">
-            <p class="Info"> You can also use aria-label/aria-labelby instead of alt </p>
+            <h2>3.1.1 Language of the page</h2>
+            <p class="Info">The default human language of each web page can be programmatically determined.</p>
+            <p class="Info"> The HTML code must contain a valid language code.</p>
+            <p class="Info"> The language set in the code must be the same language as the content of the web page. </p>
 
             <br>
 
-            <img src="/images/1.1.3.png" alt="HTML av kode" width="455" height="50">
-            <p class="Info"> Is the non-text content or object complex? Use long description. </p>
+            <h3> Code Example: </h3>
+
+            <img  src="/images/html-lang.png" alt="Code example" width="400" height="95">
+            <img  src="/images/xthml-lang.png" alt="Code example" width="455" height="90">
 
             <br>
 
-            <img src="/images/1.1.4.png" alt="HTML av kode" width="455" height="50">
-            <p class="Info"> Convey the possible interaction with non-text content. </p>
+            <h2> 3.1.2 Language of the parts</h2>
+            <p class="Info"> The human language of each passage or phrase in the content be programmatically determined
+            except for proper names, technical terms, words of indeterminate language, and words or phrases that have
+            become part of the vernacular of the immediately surrounding text. </p>
 
+            <br>
+
+            <h3> Code Example: </h3>
+            <img src="/images/3.1.2.png" alt="Code example" width="455" height="95">
+
+            <br>
+
+            <p class="Info"> The attribute lang can be used in any HTML element. </p>
 
             </section>
-            <section>Innhold 2</section>
+            <h1>3.2 Predictable</h1>
+            <br>
+
+            <h2> 3.2.1 Focus </h2>
+            <p class="Info"> When any user interface component receives focus, it does not initiate
+            a change of context.</p>
+            <p class="Info"> Change of context: A new window open, focus are moved to a new component,
+            user are sent to a new webpage, and the side content are drastically changed.</p>
+
+            <br>
+
+            <p class="Info"> The context should not change automatically when users navigate through the website.</p>.
+
+            <br>
+
+            <h2> 3.2.2 Input </h2>
+            <p class="Info"> Changing the setting of any user interface component does not automatically cause a change
+            of context unless the user has been advised of the behavior before using the component. </p>
+            <p class="Info"> Change of setting: Is to change an aspect of the control that persists even after the user no longer
+            interacts with it. </p>
+
+            <br>
+
+            <h3> Code Example: </h3>
+
+
+            <section>
+
+            </section>
             <section>Innhold 3</section>
             <section>Innhold 4</section>
             </div>
@@ -164,6 +212,12 @@ title: Understandable
   </div>
 
           </div>
+
+
+
+
+
+
 
 
 
