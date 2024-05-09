@@ -15,19 +15,16 @@
 // Ingress box //
 
 #perceivable-logo{
-  //consider making the content of the page-header flexbox? Done:)
-  //position: relative;
-  top: -16rem;
-  padding: 60px;
-  right: 9rem;
-  width: 12rem;
+  margin-left: 65.5rem;
+  margin-top: -14.4rem;
+  width: 13rem;
   height: auto;
-  float: right;
   }
 
 .page-header{
   display: flex;
 }
+
 
 // Checklist box //
 
@@ -41,17 +38,9 @@
   margin-right: 30px;
 }
 
-/*
-.container-left{
-  position: relative;
-  width: 30em;
-  margin-top: 5rem;
-  margin-left: 50px;
-}
-*/
+
 
 .btn{
- /* background-color: gray;*/
   display: flex;
   justify-content: space-between;
   height: 55px;
@@ -79,7 +68,7 @@
 
 .checklist{
   position: relative;
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
   display: none;
   color: white;
 }
@@ -143,8 +132,6 @@
 // Example box //
 
 .container-right{
-  //display: flex;
-  //width: 50rem;
   width: 60%;
   background-color: lightgray;
   margin-top: 30px;
@@ -152,20 +139,9 @@
   margin-bottom: 20px;
 }
 
-/*
-.container-right{
-  margin: 10px auto;
-  width: 45%;
-  position: relative;
-  left: 25%;
-  top: -10.5rem;
-  background-color: lightgray;
-}*/
-
 .slideShow{
- // border: 2px solid #333333;
   position: relative;
-  height: 50rem;
+  height: 60rem;
   overflow: hidden;
 }
 
@@ -215,7 +191,7 @@
   //position: absolute;
   //top: 1%; //denne må kanskje endres for å få pilen på riktig plass
   cursor: pointer;
-  //transform: translateY(-1%);
+
 }
 
 .controls .arrow i {
@@ -248,7 +224,7 @@
     flex-direction: column;
   }
   .page-header{
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .page-img{
     display: flex;
