@@ -1,3 +1,191 @@
 ---
 title: Tabs
 ---
+
+<%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
+<%= stylesheet_link_tag "tabs" %>
+
+  <div class="page-header">
+    <h1> Tabs </h1>
+    <p> Tabs allow the user to navigate through different subsections on the same page.
+    </p>
+    <p> It is not like a header navigation, where they navigate the main content and change the whole context. While tabs change only a smaller section on the same page and do not change the whole context, but only the content that is chosen. In short, it is a same-page link that will direct you to a distinct section of the content
+    </p>
+    <p>Tabs can come in the form of a list or a panel.
+    </p>
+    <p>Tablist is list of links representing the subsection and will directly take you to that section when clicked. Example of this is a table of content.
+    </p>
+    <p>Tabpanel can be compared as a folder with “tabs”, and when selected it shows the following information. The difference between the list and the panel is the panel shows only on section at the time when selected while in the information of the list is present at all time on the page.
+    </p>
+
+  </div>
+
+
+ <div class="container" data-component="checklist">
+
+  <div class="container-left">
+      <div class="checklist-container">
+        <div class="btn" >
+          <span class="text-btn" id="carousel-btn">Content</span>
+          <span class="arrow-down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <ul class="checklist" >
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text">The title of the subsection must not be too long.</span>
+          </li>
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text"> Arrange the tabs in order so it makes sense for the user.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="checklist-container">
+        <div class="btn" >
+           <span class="text-btn" id="carousel-btn">Style</span>
+           <span class="arrow-down">
+                 <i class="fa-solid fa-chevron-down"></i>
+           </span>
+          </div>
+
+          <ul class="checklist">
+            <li class="element">
+               <span class="checkbox" >
+                <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text">The tabs should only be on one row and not stack on top of each other. </span>
+            </li>
+            <li class="element">
+               <span class="checkbox">
+                 <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text">Maximum tabs is 7 (+- 2) (Miller’s Law). </span>
+            </li>
+            <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check" id= "check-icon"></i>
+                 </span>
+                 <span class="element-text">The provided code does not include nested or sub tabs.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist-container">
+          <div class="btn">
+             <span class="text-btn" id="carousel-btn">Advisory Style</span>
+             <span class="arrow-down">
+               <i class="fa-solid fa-chevron-down"></i>
+             </span>
+            </div>
+
+              <ul class="checklist">
+                <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check "id= "check-icon"></i>
+                 </span>
+                  <span class="element-text">Style the active/on focus tab differently</span>
+                  </li>
+                  <li class="element">
+                    <span class="checkbox">
+                     <i class="fa-solid fa-check "id= "check-icon"></i>
+                    </span>
+                    <span class="element-text">Set the first tab as active on page load.</span>
+                   </li>
+                    </ul>
+           </div>
+           <div class="checklist-container">
+                     <div class="btn">
+                        <span class="text-btn" id="carousel-btn">Accessibility </span>
+                        <span class="arrow-down">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                       </div>
+
+                         <ul class="checklist">
+                           <li class="element">
+                            <span class="checkbox">
+                               <i class="fa-solid fa-check "id= "check-icon"></i>
+                            </span>
+                             <span class="element-text">If content in the tabs have images or table, ensure to add alt text is added. </span>
+                             </li>
+                             <li class="element">
+                               <span class="checkbox">
+                                <i class="fa-solid fa-check "id= "check-icon"></i>
+                               </span>
+                               <span class="element-text">Tabs panel should be able to navigate with keyboard by using arrow keys and tab key.</span>
+                              </li>
+                             </ul>
+                      </div>
+           </div>
+
+        <div class="container-right">
+          <div class="slideShow">
+          <div class="slides">
+          <section>
+          <h1>1.1 Text Alternativ</h1>
+          <br>
+          <p class="Info"> Images only for decoration or otherwise not presented to the user need to not be disruptive for assistive technology.
+           Even more simple, use CSS for decorative pieces. </p>
+          <img src="/images/1.1.1.png" alt="Code example from HTML" width="455" height="50">
+          <p class"Info"> Give non-text content a descriptive text alternative and if its complex add on a meaningful caption. </p>
+
+          <br>
+
+          <img src="/images/1.1.2.png" alt="Code example from HTML" width="455" height="50">
+          <p class"Info"> You can also use aria-label/aria-labelby instead of alt </p>
+
+          <br>
+
+          <img src="/images/1.1.3.png" alt="Code example from HTML" width="455" height="50">
+          <p class"Info"> Is the non-text content or object complex? Use long description. </p>
+
+          <br>
+
+          <img src="/images/1.1.4.png" alt="Code example from HTML" width="455" height="50">
+          <p class"Info"> Convey the possible interaction with non-text content. </p>
+
+
+          </section>
+
+          <section>
+          <h1> Time Based Media </h1>
+          <br>
+          <p class="Info"> Make a transcript and/or put captions alongside. The info should be equivalent. With both dialog,
+           sound effects and explanation of what is happening in the same order as the audio/video. </p>
+
+          <p class="Info">
+          </section>
+
+          <section>Innhold 3</section>
+          <section>Innhold 4</section>
+          </div>
+
+          <div class="controls">
+          <span class="left arrow">
+            <i class="material-icons"> keyboard_arrow_left</i>
+          </span>
+          <span class="right arrow">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </span>
+
+
+          </div>
+         </div>
+</div>
+
+        </div>
+
+
+
+
+
+<%= javascript_include_tag "table.js" %>
+
