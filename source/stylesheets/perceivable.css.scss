@@ -11,6 +11,12 @@
   width: 100%;
 
 }
+ul, ol, dl {
+  margin-left: 60px;
+}
+dt{
+
+}
 
 // Ingress box //
 
@@ -157,10 +163,16 @@
   flex: 0 0 100%;
 }
 
-.slides section h1{
+.slides section h1, h2, h3{
   font-size: 20px;
   padding-top: 50px;
-  padding-left: 50px;
+  padding-left: 45px;
+}
+
+.slides section h2, h3{
+  font-size: 18px;
+  padding-top: 50px;
+  padding-left: 45px;
 }
 
 .slides section p {
