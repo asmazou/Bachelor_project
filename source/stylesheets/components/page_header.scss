@@ -61,5 +61,8 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+    &:not(checkbox.html.erb){
+      margin-bottom: 5px;
+    }
   }
 }
