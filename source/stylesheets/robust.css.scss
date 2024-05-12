@@ -28,7 +28,6 @@
   width: 40%;
   margin-top: 30px;
   padding-left: 20px;
-  flex-direction: column;
   margin-right: 30px;
 }
 
@@ -85,10 +84,10 @@
   display: flex;
   list-style: none;
   align-items: center;
-  height: 55px;
+  min-height: 100px;
   cursor: pointer;
   transition: 0.4s;
-  padding: 0 15px;
+  padding: 0 45px;
   border-radius: 5px;
 }
 
@@ -134,11 +133,12 @@
 .container-right{
   display: flex;
   //width: 50rem;
-  width: 60%;
+  width: 50%;
   background-color: lightgray;
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 20px;
+
 }
 
 /*
@@ -205,10 +205,10 @@
 }
 
 .controls .arrow {
-  //position: absolute;
-  //top: 1%; //denne må kanskje endres for å få pilen på riktig plass
+  position: absolute;
+  top: 1%; //denne må kanskje endres for å få pilen på riktig plass
   cursor: pointer;
-
+  transform: translateY(-1%);
 }
 
 .controls .arrow i {

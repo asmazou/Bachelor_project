@@ -143,7 +143,7 @@
 .container-right{
   //display: flex;
   //width: 50rem;
-  width: 60%;
+  width: 50%;
   background-color: lightgray;
   margin-top: 30px;
   margin-left: 30px;
@@ -228,10 +228,10 @@
   right: 0;
 }
 .controls .arrow {
-  position: absolute;
-  top: 1%;
+ // position: absolute;
+ // top: 1%;
   cursor: pointer;
-  transform: translateY(-1%);
+  //transform: translateY(-1%);
 }
 
 .controls .arrow i {

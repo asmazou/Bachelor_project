@@ -134,7 +134,7 @@
 .container-right{
   display: flex;
   //width: 50rem;
-  width: 60%;
+  width: 50%;
   background-color: lightgray;
   margin-top: 30px;
   margin-left: 30px;
@@ -205,10 +205,10 @@
 }
 
 .controls .arrow {
-  //position: absolute;
-  //top: 1%; //denne må kanskje endres for å få pilen på riktig plass
+  position: absolute;
+  top: 1%; //denne må kanskje endres for å få pilen på riktig plass
   cursor: pointer;
-
+  transform: translateY(-1%);
 }
 
 .controls .arrow i {
