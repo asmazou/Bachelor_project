@@ -1,3 +1,173 @@
 ---
 title: Checkbox
 ---
+<%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" %>
+<%= stylesheet_link_tag "perceivable.css.scss" %>
+
+  <div class="page-header">
+    <h1> Checkbox </h1>
+    <p> A small squared box that can be clicked or toggled between two states: <i>checked or unchecked</i>.
+    </p>
+    <p>Checkboxes appear either singular or in groups. Singular checkboxes you can use in contexts like asking for acknowledgment or consent for a form. These cases are questions in binary form. A checkbox in groups is used in cases where the user has multiple selections in a list. The user can choose which boxes are to be checked and can be used to confirm something in the application like a survey.
+    </p>
+    <p>Checkboxes are visually appealing and are a common interactive button element used to confirm something. </p>
+    <p>When you have to choose between checkboxes and radiobuttons or multiple-dropdown menu, checkboxes is optimal when:
+    </p>
+    <ul>
+    <li> the user can choose between multiple options. </li>
+    <li> the user have the choice of choosing nothing. </li>
+    </ul>
+
+  </div>
+
+
+ <div class="container" data-component="checklist">
+
+  <div class="container-left">
+      <div class="checklist-container">
+        <div class="btn" >
+          <span class="text-btn" id="carousel-btn">Action</span>
+          <span class="arrow-down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </div>
+
+        <ul class="checklist" >
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text">When the box is focused, an icon (like a checkmark) or something that fills the box should indicate that the box has been selected.</span>
+          </li>
+          <li class="element">
+            <span class="checkbox">
+              <i class="fa-solid fa-check" id= "check-icon"></i>
+            </span>
+            <span class="element-text"> Context is not changing when the checkbox is interacted (should use a submit button instead).</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="checklist-container">
+        <div class="btn" >
+           <span class="text-btn" id="carousel-btn">Content/Lables</span>
+           <span class="arrow-down">
+                 <i class="fa-solid fa-chevron-down"></i>
+           </span>
+          </div>
+
+          <ul class="checklist">
+            <li class="element">
+               <span class="checkbox" >
+                <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text"> Avoid using long description if possible. Use a <b>subtext and title</b> before the checkbox(es) to clarify if necessary. </span>
+            </li>
+            <li class="element">
+               <span class="checkbox">
+                 <i class="fa-solid fa-check" id= "check-icon"></i>
+               </span>
+               <span class="element-text">If additional informations is needed, use <b>tooltips</b> or supplementary <b>labels</b> to clarify the box.  </span>
+            </li>
+            <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check" id= "check-icon"></i>
+                 </span>
+                 <span class="element-text">If the list is long, consider categorize them in groups or group them horizontal.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checklist-container">
+          <div class="btn">
+             <span class="text-btn" id="carousel-btn">Style</span>
+             <span class="arrow-down">
+               <i class="fa-solid fa-chevron-down"></i>
+             </span>
+            </div>
+
+              <ul class="checklist">
+                <li class="element">
+                 <span class="checkbox">
+                    <i class="fa-solid fa-check "id= "check-icon"></i>
+                 </span>
+                  <span class="element-text">Always position the checkboxes to the left side of the page. </span>
+                  </li>
+                  <li class="element">
+                    <span class="checkbox">
+                     <i class="fa-solid fa-check "id= "check-icon"></i>
+                    </span>
+                    <span class="element-text">Label of the checkboxes is positioned on the right side of the boxes. </span>
+                   </li>
+                    </ul>
+           </div>
+           <div class="checklist-container">
+                     <div class="btn">
+                        <span class="text-btn" id="carousel-btn">Legal, Economic transaction </span>
+                        <span class="arrow-down">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                       </div>
+
+                         <ul class="checklist">
+                           <li class="element">
+                            <span class="checkbox">
+                               <i class="fa-solid fa-check "id= "check-icon"></i>
+                            </span>
+                             <span class="element-text">Under irreversible nature, a checkbox should be added to confirm the user choices before moving on with the form. (G155) </span>
+                             </li>
+                             <li class="element">
+                               <span class="checkbox">
+                                <i class="fa-solid fa-check "id= "check-icon"></i>
+                               </span>
+                               <span class="element-text">If the box is unchecked and the user have submitted the information, they should not lose the information they have entered when they are going to resubmit. </span>
+                              </li>
+                             </ul>
+                      </div>
+           </div>
+
+        <div class="container-right">
+          <div class="slideShow">
+          <div class="slides">
+          <section>
+          <h1>EXAMPLE - HTML</h1>
+          <br>
+          <p class="Info"> The html code below is an examle of a tabpanel that is Universally Designed </p>
+            <img class= "tabs_ex" src="/images/tabs_ex_html.png" alt="Code example for tabpanel written in HTML" >
+          </section>
+
+          <section>
+          <h1> EXAMPLE - CSS </h1>
+          <br>
+          <p class="Info"> The css code below is an examle of a tabpanel that is Universally Designed </p>
+            <img class= "tabs_ex" src="/images/tabs_ex_css.png" alt="Code example for tabpanel written in CSS" >
+          </section>
+
+          <section>
+          <h1> EXAMPLE - JavaScript </h1>
+          <p class="Info"> The css code below is an examle of a tabpanel that is Universally Designed </p>
+            <img class= "tabs_ex" src="/images/tabs_ex_js.png" alt="Code example for tabpanel written in JavaScript" >
+          </section>
+          <section>Innhold 4</section>
+          </div>
+
+          <div class="controls">
+          <span class="left arrow">
+            <i class="material-icons"> keyboard_arrow_left</i>
+          </span>
+          <span class="right arrow">
+            <i class="material-icons">keyboard_arrow_right</i>
+          </span>
+
+
+          </div>
+         </div>
+</div>
+
+        </div>
+
+
+
+
+
+<%= javascript_include_tag "table.js" %>
