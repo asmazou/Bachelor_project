@@ -4,8 +4,16 @@ body > {
   margin: auto;
 }
 
+.title_centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .site_title{
   padding: 30px;
+  margin-right: 440px;
 
 
   .h1 {
@@ -17,15 +25,17 @@ body > {
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
 }
 
 .wcag_guides{
   padding: 30px;
+  max-width: 1300px;
 }
 
 .component_guides{
   padding: 30px;
+  max-width: 1300px;
 }
 
 .guides_header{
@@ -66,9 +76,9 @@ body > {
   justify-content: space-between;
 }
 
-//When users hovers over the buttons, the buttons will be highlighted without getting larger
-.content_link :hover{
-  border: 2px #000000;
+//When users hovers over the buttons, the buttons will scale by 0.05 times its size
+.content_container:hover  {
+  transform: scale(1.05);
 }
 
 .content_container > img {
