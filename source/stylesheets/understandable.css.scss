@@ -246,6 +246,8 @@
   right: 10px;
 }
 
+
+
 //Phone size
 @media (max-width: 600px) {
 
@@ -253,7 +255,7 @@
     flex-direction: column;
   }
   .page-header{
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .page-img{
     display: flex;
@@ -265,5 +267,9 @@
   }
   .container-left{
     width: 90%;
+  }
+
+  #understandable-logo{
+    display: none;
   }
 }
