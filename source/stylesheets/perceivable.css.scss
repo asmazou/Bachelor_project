@@ -139,7 +139,8 @@ dt{
 
 .container-right{
   width: 50%;
-  background-color: lightgray;
+  background-color: #28a5de; // in case the browser doesn't support gradient, inspired by W3Schools
+  background-image: radial-gradient(100% 100%, #28a5de, #f7f7f7);
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 20px;
